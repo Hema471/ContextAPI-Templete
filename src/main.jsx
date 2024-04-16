@@ -5,6 +5,7 @@ import "./index.scss";
 import router from "./routes";
 import App from "./App";
 import AuthContext from "./context/MyContext";
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -15,3 +16,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </AuthContext>
   </React.StrictMode>
 );
+serviceWorkerRegistration.register();

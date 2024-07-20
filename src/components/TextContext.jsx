@@ -4,7 +4,7 @@ import { textContext } from "./../context/MyContext";
 const TextContext = () => {
   const testName = useContext(textContext);
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center">
       <h1 className="font-bold text-[50px]">
         <p className="inline text-red-600">{testName.name} </p>From MyContext.jsx
       </h1>
